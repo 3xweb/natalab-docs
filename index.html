@@ -1,0 +1,836 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="usecase/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>Documentação Natalab</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.8c3ca2c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentacao-do-projeto-natalab" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="." title="Documentação Natalab" class="md-header__button md-logo" aria-label="Documentação Natalab" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentação Natalab
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Instrodução
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+    
+  
+  Instrodução
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="usecase/" class="md-tabs__link">
+        
+  
+    
+  
+  Caso de uso
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Documentação Natalab" class="md-nav__button md-logo" aria-label="Documentação Natalab" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentação Natalab
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Instrodução
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Instrodução
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#documentacao-do-projeto-natalab" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentação do Projeto NATALAB
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Visão Geral
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Visão Geral">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sobre-a-empresa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sobre a Empresa:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-tecnologias-utilizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Tecnologias Utilizadas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-funcionalidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Funcionalidades
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Funcionalidades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#site-institucional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Site Institucional
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otimizacao-para-seo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Otimização para SEO:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-customizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistema Customizado
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sistema Customizado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-cadastro-de-clientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Cadastro de Clientes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-cadastro-de-instrumentos-de-clientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Cadastro de Instrumentos de Clientes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-entrada-de-dados-de-calibracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Entrada de Dados de Calibração
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-visualizacao-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Visualização de Dados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-filtro-por-caracteristicas-de-equipamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Filtro por Características de Equipamento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-impressao-de-pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Impressão de PDF
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-estrutura-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Estrutura do Projeto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Estrutura do Projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-posts-customizados-custom-post-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Posts Customizados (Custom Post Types)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-campos-personalizados-acf" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Campos Personalizados (ACF)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-integracao-e-seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Integração e Segurança
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Integração e Segurança">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-integracao-com-elementor" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Integração com Elementor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-acesso-restrito" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Acesso Restrito
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Implementação
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Implementação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-desenvolvimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Desenvolvimento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Testes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 Deploy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-consideracoes-finais" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Considerações Finais
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="usecase/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Caso de uso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Instrodução</h1>
+
+<h3 id="documentacao-do-projeto-natalab">Documentação do Projeto NATALAB</h3>
+<hr />
+<h2 id="1-visao-geral">1. Visão Geral</h2>
+<h3 id="sobre-a-empresa">Sobre a Empresa:</h3>
+<p>A <strong>NATALAB</strong> atende a demandas especializadas em:
+  - <strong>Calibrações</strong>
+  - <strong>Inspeções</strong>
+  - <strong>Teste Hidrostático</strong>
+  - <strong>Comissionamento</strong>
+  - <strong>Laudos Técnicos</strong></p>
+<p>Atuando em todo o território nacional, a empresa se destaca pela parceria com clientes, oferecendo serviços com foco em qualidade e redução de custos.</p>
+<hr />
+<h2 id="2-tecnologias-utilizadas">2. Tecnologias Utilizadas</h2>
+<ul>
+<li><strong>WordPress</strong>: CMS base do sistema.</li>
+<li><strong>Elementor</strong>: Ferramenta de criação de páginas visuais.</li>
+<li><strong>ACF (Advanced Custom Fields)</strong>: Para criação de campos personalizados no backend.</li>
+<li><strong>PHP</strong>: Para integração de lógica customizada no sistema WordPress.</li>
+<li><strong>MySQL</strong>: Banco de dados que armazena os dados do sistema.</li>
+<li><strong>PDF Generation</strong>: Para exportação e impressão de relatórios em PDF.</li>
+</ul>
+<h2 id="3-funcionalidades">3. Funcionalidades</h2>
+<h3 id="site-institucional">Site Institucional</h3>
+<ul>
+<li>
+<p><strong>Home Page</strong>: </p>
+<ul>
+<li>Apresenta um resumo claro e objetivo dos principais serviços oferecidos pela NATALAB, com destaque visual para os diferenciais da empresa.</li>
+<li>Um <strong>banner rotativo</strong> ou seção de destaque para os <strong>certificados</strong> e selos de qualidade obtidos pela NATALAB, reforçando a credibilidade e competência técnica.</li>
+<li>A página inicial será otimizada para SEO com <strong>meta tags</strong> relevantes, <strong>headings bem estruturadas</strong> (H1, H2, H3) e textos que incluem <strong>palavras  -chave</strong> específicas relacionadas aos serviços de calibração, inspeção e outros oferecidos pela empresa.</li>
+</ul>
+</li>
+<li>
+<p><strong>Serviços</strong>:</p>
+<ul>
+<li>Cada serviço terá uma <strong>página dedicada</strong> individualmente (Calibrações, Inspeções, Teste Hidrostático, Comissionamento, Laudos Técnicos, etc.), detalhando o processo, os benefícios e a importância de cada serviço.</li>
+<li>As páginas de serviços serão otimizadas para SEO, com <strong>conteúdos específicos e aprofundados</strong>, como <strong>perguntas frequentes (FAQ)</strong> e <strong>casos de uso práticos</strong>, para aumentar a relevância nos motores de busca.</li>
+<li>Implementação de <strong>rich snippets</strong> (estruturação de dados) para destacar informações relevantes nos resultados de busca.</li>
+<li>Seções para destacar <strong>normas e regulamentos</strong> que respaldam os serviços, além de links diretos para <strong>certificados</strong> relevantes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Certificados</strong>:</p>
+<ul>
+<li>Página dedicada para listar e explicar cada <strong>certificado</strong> obtido pela NATALAB.</li>
+<li>Para cada certificado, haverá uma descrição clara da <strong>importância</strong> e <strong>benefícios</strong> que eles trazem para os serviços da empresa, além de <strong>imagens escaneadas</strong> dos documentos.</li>
+<li>As certificações serão organizadas em uma galeria visual, facilitando a navegação e compreensão por parte dos visitantes.</li>
+<li>Otimização para SEO focada em termos como "certificações de calibração", "certificados de qualidade" e "acreditações NATALAB", garantindo uma presença forte nas buscas.</li>
+</ul>
+</li>
+<li>
+<p><strong>Contato</strong>:</p>
+<ul>
+<li>Formulário de contato intuitivo, integrado com APIs (CRM ou Google Sheets) para capturar leads.</li>
+<li>O formulário também será configurado para gerar <strong>mensagens automáticas</strong> e integrar com o CRM da empresa para um acompanhamento eficaz.</li>
+<li>O <strong>mapa interativo</strong> com a localização da empresa e links para <strong>Google My Business</strong>, ajudando no SEO local.</li>
+</ul>
+</li>
+<li>
+<p><strong>Blog/Notícias</strong>:</p>
+<ul>
+<li>Seção de blog para atualizações de projetos, inovações técnicas, lançamentos de novos serviços e informações sobre o setor de calibração e inspeção.</li>
+<li>Cada post será otimizado para SEO com <strong>títulos atraentes</strong>, <strong>subtítulos</strong> (H2 e H3), <strong>palavras  -chave estratégicas</strong> e links internos para outras páginas do site.</li>
+<li>Os artigos poderão incluir estudos de caso, depoimentos de clientes e as últimas tendências do setor.</li>
+</ul>
+</li>
+<li>
+<p><strong>Área Restrita</strong>:</p>
+<ul>
+<li>Acesso exclusivo para clientes via login seguro, onde eles poderão visualizar relatórios de calibração, laudos técnicos e outros documentos.</li>
+<li>Otimizado para segurança, com o uso de <strong>SSL</strong> e autenticação segura.</li>
+<li>A seção permitirá o <strong>download de certificados</strong> e/ou <strong>relatórios de calibração</strong> em formato PDF, vinculados a cada cliente.</li>
+<li><strong>Notificações automáticas</strong> por e  -mail quando novos relatórios ou certificados estiverem disponíveis para o cliente.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="otimizacao-para-seo">Otimização para SEO:</h3>
+<ul>
+<li><strong>Meta tags</strong> bem definidas em todas as páginas, incluindo título, descrição e palavras  -chave relevantes.</li>
+<li><strong>URLs amigáveis</strong> e curtas, estruturadas para facilitar a navegação e melhorar a indexação pelos motores de busca.</li>
+<li>Uso de <strong>links internos</strong> entre as páginas de serviços, blog e certificados, melhorando a autoridade do site.</li>
+<li>Implementação de <strong>alt tags</strong> em todas as imagens, especialmente nas páginas de certificados e serviços.</li>
+<li><strong>Velocidade do site</strong> otimizada, garantindo tempo de carregamento rápido e uma melhor experiência do usuário (UX), essencial para o ranqueamento no Google.</li>
+<li><strong>Responsividade</strong> garantida para que o site funcione perfeitamente em todos os dispositivos (desktop, tablet, smartphone), além de compatibilidade com AMP (Accelerated Mobile Pages).</li>
+</ul>
+<hr />
+<p>Essa estrutura garante que o site da NATALAB destaque individualmente os serviços, dê a devida importância aos certificados e seja otimizado para SEO, promovendo uma forte presença online e uma experiência de usuário eficiente.</p>
+<h3 id="sistema-customizado">Sistema Customizado</h3>
+<h4 id="31-cadastro-de-clientes">3.1 Cadastro de Clientes</h4>
+<ul>
+<li><strong>ACF Custom Fields</strong> para armazenar informações sobre cada cliente, como:<ul>
+<li>Nome</li>
+<li>CNPJ</li>
+<li>Endereço</li>
+<li>Contato</li>
+</ul>
+</li>
+</ul>
+<h4 id="32-cadastro-de-instrumentos-de-clientes">3.2 Cadastro de Instrumentos de Clientes</h4>
+<ul>
+<li><strong>Relacionamento de Posts com ACF</strong> para conectar instrumentos a clientes.</li>
+<li>Campos necessários para o instrumento:<ul>
+<li>Nome do Instrumento</li>
+<li>Marca</li>
+<li>Modelo</li>
+<li>Número de Série</li>
+<li>Data de Aquisição</li>
+</ul>
+</li>
+</ul>
+<h4 id="33-entrada-de-dados-de-calibracao">3.3 Entrada de Dados de Calibração</h4>
+<ul>
+<li>Interface para entrada de dados de calibração diretamente no WordPress.</li>
+<li><strong>Campos Personalizados ACF</strong>:<ul>
+<li>Data da Calibração</li>
+<li>Tolerância</li>
+<li>Resultados (valores medidos)</li>
+<li>Observações do técnico responsável</li>
+</ul>
+</li>
+</ul>
+<h4 id="34-visualizacao-de-dados">3.4 Visualização de Dados</h4>
+<ul>
+<li>Página de visualização de relatórios e resultados de calibração para o cliente. </li>
+<li><strong>ACF</strong> e <strong>Elementor</strong> para estruturar os dados e garantir uma boa experiência visual.</li>
+<li><strong>Elementor Pro</strong> para criar uma tabela interativa com os instrumentos do cliente.</li>
+</ul>
+<h4 id="35-filtro-por-caracteristicas-de-equipamento">3.5 Filtro por Características de Equipamento</h4>
+<ul>
+<li>Filtros customizados com base nos <strong>Custom Post Types</strong> (instrumentos) e campos personalizados.<ul>
+<li>Filtro por:</li>
+<li>Tipo de Instrumento</li>
+<li>Marca</li>
+<li>Data da última calibração</li>
+<li>Status da calibração</li>
+</ul>
+</li>
+</ul>
+<h4 id="36-impressao-de-pdf">3.6 Impressão de PDF</h4>
+<ul>
+<li><strong>Gerador de PDF</strong>: Geração automática de relatórios técnicos de calibração em formato PDF.</li>
+<li>Funcionalidade integrada no painel do cliente para baixar relatórios de calibração.</li>
+</ul>
+<hr />
+<h2 id="4-estrutura-do-projeto">4. Estrutura do Projeto</h2>
+<h3 id="41-posts-customizados-custom-post-types">4.1 Posts Customizados (Custom Post Types)</h3>
+<ul>
+<li><strong>Clientes</strong>: Posts representando clientes, contendo campos personalizados (ACF) para informações de contato e histórico de serviços.</li>
+<li><strong>Instrumentos</strong>: Posts representando instrumentos de clientes, com campos personalizados para armazenar dados técnicos.</li>
+</ul>
+<h3 id="42-campos-personalizados-acf">4.2 Campos Personalizados (ACF)</h3>
+<ul>
+<li>Uso extensivo de ACF para capturar dados específicos como:<ul>
+<li>Informações dos clientes (nome, CNPJ, endereço, contato)</li>
+<li>Detalhes dos instrumentos (marca, modelo, número de série, etc.)</li>
+<li>Dados de calibração (datas, resultados, observações)</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="5-integracao-e-seguranca">5. Integração e Segurança</h2>
+<h3 id="51-integracao-com-elementor">5.1 Integração com Elementor</h3>
+<ul>
+<li><strong>Elementor</strong> será usado para criar páginas dinâmicas com base nos dados dos <strong>Custom Post Types</strong>.</li>
+<li>O design será otimizado para responsividade e facilidade de navegação.</li>
+</ul>
+<h3 id="52-acesso-restrito">5.2 Acesso Restrito</h3>
+<ul>
+<li><strong>Área Restrita</strong> protegida por autenticação de usuários para permitir que apenas clientes da NATALAB acessem os dados de seus equipamentos e relatórios.</li>
+</ul>
+<hr />
+<h2 id="6-implementacao">6. Implementação</h2>
+<h3 id="61-desenvolvimento">6.1 Desenvolvimento</h3>
+<ul>
+<li>O desenvolvimento será feito em ambiente WordPress local inicialmente, com deploy utilizando Git para controle de versão.</li>
+<li>O uso de ACF permitirá flexibilidade na criação de campos, evitando customizações pesadas no código.</li>
+</ul>
+<h3 id="62-testes">6.2 Testes</h3>
+<ul>
+<li>Serão realizados testes de usabilidade no sistema para garantir que as funcionalidades (filtros, cadastro, visualização e geração de PDFs) funcionem conforme o esperado.</li>
+</ul>
+<h3 id="63-deploy">6.3 Deploy</h3>
+<ul>
+<li>O site será hospedado em um servidor WordPress compatível com as necessidades do sistema e com suporte para PHP e MySQL. A geração de PDFs e outros serviços devem ser otimizados no ambiente de produção.</li>
+</ul>
+<hr />
+<h2 id="7-consideracoes-finais">7. Considerações Finais</h2>
+<ul>
+<li>O sistema da NATALAB será escalável, permitindo futuras expansões para novos serviços ou customizações específicas.</li>
+<li>A interface será intuitiva, focando na experiência do usuário e na simplicidade para o cliente final acessar suas informações e relatórios.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.expand", "navigation.tabs", "navigation.prune", "navigation.sections", "search.highlight", "search.share", "toc.integrate", "content.code.copy"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.525ec568.min.js"></script>
+      
+    
+  </body>
+</html>
